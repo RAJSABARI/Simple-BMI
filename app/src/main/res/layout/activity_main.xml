@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#F3020000">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/weight"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:padding="5dp"
+        android:background="@color/white"
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:inputType="number|numberDecimal"
+        android:ems="5"
+        />
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:padding="5dp"
+        android:background="@color/white"
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:inputType="number|numberDecimal"
+        android:ems="5"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black"
+        android:backgroundTint="@color/black">
+        <Button
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="@string/calculate"
+            android:id="@+id/btnCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UsingOnClickInXml" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/result"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    
+
+</LinearLayout>
